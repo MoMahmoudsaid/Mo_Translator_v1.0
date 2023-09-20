@@ -18,23 +18,23 @@ app_name = tk.Label(app, text=" Welcome To My Translator ", font="arial 15 bold"
 app_name.place(x= 230, y=0)
 
 app_name2 = tk.Label(app, text="Enter Your Text Here ", font="arial 15 bold")
-app_name2.place(x=15, y=45)
+app_name2.place(x=35, y=345)
 
-input_text = tk.Text(app, font="arial 10", height=11, width=40)
+input_text = tk.Text(app, font="arial 10", height=15, width=40)
 input_text.place(x=15, y=100)
 
-input_lang = ttk.Combobox(app, width=19, values=Language_names)
-input_lang.place(x=55, y=75)
+input_lang = ttk.Combobox(app, width=40, values=Language_names)
+input_lang.place(x=15, y=75)
 input_lang.set(Language_names[0])
 #---------------------------------------------------------------------
 out_name2 = tk.Label(app, text=" Translated Text Here ", font="arial 15 bold")
-out_name2.place(x=440, y=45)
+out_name2.place(x=440, y=345)
 
-out_text = tk.Text(app, font="arial 10", height=11, width=40)
+out_text = tk.Text(app, font="arial 10", height=15, width=40)
 out_text.place(x=400, y=100)
 
-out_lang = ttk.Combobox(app, width=19, values=Language_names)
-out_lang.place(x=440, y=75)
+out_lang = ttk.Combobox(app, width=40, values=Language_names)
+out_lang.place(x=400, y=75)
 out_lang.set(Language_names[1])
 #-------------------------------------------------------------------
 def translate():
