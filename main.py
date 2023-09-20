@@ -10,6 +10,7 @@ Language_codes = {lang['name']: lang['code'] for lang in Language_data}
 
 app = tk.Tk()
 app.geometry('700x400')
+app.resizable(False, False)
 app.title("Mo Translator V1.0")
 app.config()
 
